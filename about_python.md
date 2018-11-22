@@ -1,92 +1,90 @@
-# About Python
+# Sobre Python
 
-Python is one of those rare languages which can claim to be both _simple_ and _powerful_.  You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution to the problem rather than the syntax and structure of the language you are programming in.
+Python é uma daquelas raras linguagens que pode reivindicar ser ao mesmo tempo _simples_ e _poderosa_. Você se encontrará prazerosamente surpreso em ver como é concentra na solução do problema em vez da sintaxe e estrutura da linguagem em que você está programando.
 
-The official introduction to Python is:
+A introdução oficial para Python é:
 
-> Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+> Python é uma linguagem poderosa e fácil para aprender. Ela possui estruturas de dados eficientes de alto nível e uma abordagem simples porém efetiva para programação orientada a objetos. A sintaxe elegante e a tipagem dinâmica do Python, junto com sua natureza interpretada, fazem-na uma linguagem ideal para codificação de script e desenvolvimento rápido de aplicações em muitas áreas na maioria das plataformas.
 
-I will discuss most of these features in more detail in the next section.
+Eu discutirei a maioria dessas características em mais detalhes na próxima seção.
 
-## Story behind the name
+## A estória por trás do nome
 
-Guido van Rossum, the creator of the Python language, named the language after the BBC show "Monty
-Python's Flying Circus". He doesn't particularly like snakes that kill animals for food by winding
-their long bodies around them and crushing them.
+Guido van Rossum, o criador da linguagem Python, nomeou a linguagem após o show da BBC "Monty Python's Flying Circus". Ele particularmente não gosta de cobras que matam animais para comer enrolando seus corpos compridos ao redor deles esmagando-os.
 
-## Features of Python
+## Caraterísticas do Python
 
-### Simple
+### Simples
 
-Python is a simple and minimalistic language. Reading a good Python program feels almost like reading English, although very strict English! This pseudo-code nature of Python is one of its greatest strengths. It allows you to concentrate on the solution to the problem rather than the language itself.
+Python é uma linguagem simples e minimalista. Ler um programa Python bom é quase como ler em inglês, embora um inglês bem estrito! Essa natureza de pseudo-código do Python é uma de suas maiores forças. Ela permite a você concentrar na solução para o problema em vez da linguagem em si.
 
-### Easy to Learn
+### Fácil para Aprender
 
-As you will see, Python is extremely easy to get started with. Python has an extraordinarily simple syntax, as already mentioned.
+Como você verá. Python é extremamente fácil para se começar. Python possui uma sintaxe extraordinariamente simple, como já mencionado.
 
-### Free and Open Source
+### Livre e de Código Aberto
 
-Python is an example of a _FLOSS_ (Free/Libré and Open Source Software). In simple terms, you can freely distribute copies of this software, read its source code, make changes to it, and use pieces of it in new free programs. FLOSS is based on the concept of a community which shares knowledge. This is one of the reasons why Python is so good - it has been created and is constantly improved by a community who just want to see a better Python.
+Python é um exemplo de um _FLOSS_ (Free/Libré e Open Source Software). De modo simples, você pode distribuir cópias deste software livremente, ler seu código fonte, efetuar mudanças e utilizar pedações dele em novos programas livres. FLOSS é baseado no conceito de uma comunidade que compartilha conhecimento. Esta é uma das razões porque Python é tão boa - foi criada e é constantemente aperfeiçoada por uma comunidade que apenas deseja ver uma linguagem Python melhor.
 
-### High-level Language
+### Linguagem de Alto Nível
 
-When you write programs in Python, you never need to bother about the low-level details such as managing the memory used by your program, etc.
+Ao escrever programas em Python, você nunca precisará preocupar-se a respeito de detalhes de baixo nível tais como gerenciar a memória utilizada por seu programa, etc.
 
-### Portable
+### Portátil
 
-Due to its open-source nature, Python has been ported to (i.e. changed to make it work on) many platforms. All your Python programs can work on any of these platforms without requiring any changes at all if you are careful enough to avoid any system-dependent features.
+Dada a sua natureza de código-aberto, Pytho foi portada para (isto é, alterada para fazê-la funcionar em) muitas plataformas. Todos os seus programas em Python podem executar em quaisquer uma dessas plataformas sem mudanças requeridas se você tiver cuidado o suficiente para evitar quaisquer funcionalidades dependentes de sistema específico.
 
-You can use Python on GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE and PocketPC!
+Você pode utilizar Python em GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE e PocketPC!
 
-You can even use a platform like [Kivy](http://kivy.org) to create games for your computer _and_ for iPhone, iPad, and Android.
+Você pode até mesmo utilizar uma plataforma como [Kivy](http://kivy.org) para criar jogos para o seu computador _e_ para iPhone, iPad, and Android.
 
-### Interpreted
+### Interpretada
 
-This requires a bit of explanation.
+Isto requer um pouco de explicação.
 
-A program written in a compiled language like C or C\++ is converted from the source language i.e. C or C++ into a language that is spoken by your computer (binary code i.e. 0s and 1s) using a compiler with various flags and options. When you run the program, the linker/loader software copies the program from hard disk to memory and starts running it.
+Um programa escrito em uma linguagem compilada como C ou C\++ é convertida da linguagem fonte, isto é, C ou C++ em uma linguagem que é falada pelo seu computador (código binário, isto é, 0s e 1s) usando um compilador com vários marcadores e opções. Quando você executa o programa, o software ligador/carregador copia o programa do disco rígido para a memória e começa a rodá-lo.
 
-Python, on the other hand, does not need compilation to binary. You just _run_ the program directly from the source code. Internally, Python converts the source code into an intermediate form called bytecodes and then translates this into the native language of your computer and then runs it. All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
+Python, por sua vez, não necessita compilação para binário. Você apenas _roda_ o programa diretamente do código fonte. Internamente, Python converte o código fonte em uma forma intermediária chamada de bytecodes e então traduz isso em uma linguagem nativa do seu computador e então a executa. Tudo isso, na verdade, torna a utilização do Python muito fácil uma vez que você não tem que se preocupar em compilar o programa, certificar-se que as bibliotecas adequadas são ligadas e carregadas, etc. Isso também torna os programas Python muito mais portáveis, uma vez que você pode apenas copiar seu programa em Python para outro computador e ele simplesmente funciona!
 
-### Object Oriented
+### Orientado a Objetos
 
-Python supports procedure-oriented programming as well as object-oriented programming. In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
+Python possui suporte a programação procedural bem como a programação orientada a objetos. Em linguagens _orientadas a procedimento_, o programa é construído ao redor de procediemntos e funcções que são nada mais nada menos que peças reutilizáveis dos programas. Em linguagens _orientadas a objetos_, o programa é construído ao redor de objetos que combinam dados e funcionalidade. Python possui um modo muito poderoso porém simples de fazer OOP, especialmente quando comparado com linguagens grandes como C++ ou Java.
 
-### Extensible
+### Extensível
 
-If you need a critical piece of code to run very fast or want to have some piece of algorithm not to be open, you can code that part of your program in C or C\++ and then use it from your Python program.
+Se você precisa de um pedaço crítico de código para executar rapidamente ou que ter algum pedaço de algoritmo não aberto, você pode codificar esta parte de seu programa em C ou C\++ e então utilizá-la em seu programa Python.
 
-### Embeddable
+### Embarcável
 
-You can embed Python within your C/C\++ programs to give _scripting_ capabilities for your program's users.
+Você pode embarcar Python em seus programas C/C\++ para fornecer funcionalidades de _scripting_ para os usuários de seu programa.
 
-### Extensive Libraries
+### Extensa Biblioteca
 
-The Python Standard Library is huge indeed. It can help you do various things involving regular expressions,documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff. Remember, all this is always available wherever Python is installed. This is called the _Batteries Included_ philosophy of Python.
+A Biblioteca Padrão do Python é certamente imensa. Ela pode te auxiliar a fazer várias coisas envolvendo expressões regulares, geração de documentação, teste de unidade, threading, bancos de dados, navegadores web, CGI, FTP, email, XML, XML-RPC, HTML, arquivos WAV, criptografia, GUI (interface gráfica de usuário) e outras coisas dependentes de sistema. Lembre-se, tudo isto está sempre disponível onde Python estiver instalado. Isto é chamado de filosofia _Baterias incluídas_ do Python.
 
-Besides the standard library, there are various other high-quality libraries which you can find at the [Python Package Index](http://pypi.python.org/pypi).
+Além da biblioteca padrão, há várias outras bibliotecas de alta qualidade que você pode encontrar no [Python Package Index](http://pypi.python.org/pypi).
 
-### Summary
+### Sumário
 
-Python is indeed an exciting and powerful language. It has the right combination of performance and features that make writing programs in Python both fun and easy.
+Python é de fato uma linguagem excitante e poderosa. Ela possui a combinação certa de desempenho e características que fazem escrever programas em Python divertido e fácil.
 
 ## Python 3 versus 2
 
-You can ignore this section if you're not interested in the difference between "Python version 2" and "Python version 3". But please do be aware of which version you are using. This book is written for Python version 3.
+Você pode ignorar esta seção se você não estiver interessado na diferença entre "Python versão 2" e "Python versão 3". Mas por favor esteja ciente da versão que está usando. Este livro foi escrito para a versão 3 do Python.
 
-Remember that once you have properly understood and learn to use one version, you can easily learn the differences and use the other one. The hard part is learning programming and understanding the basics of Python language itself. That is our goal in this book, and once you have achieved that goal, you can easily use Python 2 or Python 3 depending on your situation.
+Lembre-se que uma vez que você tenha compreendido e aprendido adequadamente a utilizar uma versão, você pode facilmente aprender as diferenças e utilizar a outra versão. A parte difícil é aprender programação e compreender o básico da linguagem Python em si. Este é nosso objetivo neste livro, e uma vez que você alcance esse objetivo, você pode facilmete utilizar Python 2 ou Python 3 dependendo de sua situação.
 
-For details on differences between Python 2 and Python 3, see:
+Para detalhes das diferenças entre Python 2 e Python 3, veja (em inglês):
 
-- [The future of Python 2](http://lwn.net/Articles/547191/)
-- [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
-- [Writing code that runs under both Python2 and 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
-- [Supporting Python 3: An in-depth guide](http://python3porting.com)
+- [O Futuro de Python 2](http://lwn.net/Articles/547191/)
+- [Portando Código Python 2 Para Python 3](https://docs.python.org/3/howto/pyporting.html)
+- [Escrevendo código que execute tanto em Python2 e 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
+- [Fornecendo Suporte à Python 3: Um guia detalhado](http://python3porting.com)
 
-## What Programmers Say
+## O que os Programadores Dizem
 
-You may find it interesting to read what great hackers like ESR have to say about Python:
+Você pode achar interessante ler o que grandes hackers como ESR tem a dizer sobre Python:
 
-- _Eric S. Raymond_ is the author of "The Cathedral and the Bazaar" and is also the person who coined the term _Open Source_. He says that [Python has become his favorite programming language](http://www.python.org/about/success/esr/). This article was the real inspiration for my first brush with Python.
-- _Bruce Eckel_ is the author of the famous 'Thinking in Java' and 'Thinking in C++' books. He says that no language has made him more productive than Python. He says that Python is perhaps the only language that focuses on making things easier for the programmer. Read the [complete interview](http://www.artima.com/intv/aboutme.html) for more details.
-- _Peter Norvig_ is a well-known Lisp author and Director of Search Quality at Google (thanks to Guido van Rossum for pointing that out). He says that [writing Python is like writing in pseudocode](https://news.ycombinator.com/item?id=1803815). He says that Python has always been an integral part of Google. You can actually verify this statement by looking at the [Google Jobs](http://www.google.com/jobs/index.html) page which lists Python knowledge as a requirement for software engineers.
+- _Eric S. Raymond_ é o autor de "The Cathedral and the Bazaar" e também a pessoa que cunhou o termo _Código Aberto_. Ele disse que [Python tornou-se sua linguagem de programação favorita](http://www.python.org/about/success/esr/). Este artigo foi a inspiração real para meu primeiro encontro com Python.
+- _Bruce Eckel_ é o autor dos famosos livros 'Thinking in Java' e 'Thinking in C++'. Ele disse que nenhuma linguagem fez ele tão produtivo quanto Python. Ele disse que Python é talvez a única linguagem que foca em tornar as coisas fáceis para o programador. Leia [a entrevista completa](http://www.artima.com/intv/aboutme.html) para maiores detalhes.
+- _Peter Norvig_ é um autor bem conhecido de Lisp e Diretor de Pesquisa de Qualidade da Google (agradeço a Guido van Rossum pela informação). Ele disse que [escrever Python é como escrever em pseudocódigo](https://news.ycombinator.com/item?id=1803815). Ele disse que Python foi sempre uma parte integral da Google. Você pode na realidade verificar essa declaração olhando na página [Google Jobs](http://www.google.com/jobs/index.html) que lista conhecimento em Python como um requisito para engenheiros de software.
