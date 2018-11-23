@@ -1,23 +1,23 @@
-# Preface
+# Prefácio
 
-Python is probably one of the few programming languages which is both simple and powerful. This is good for beginners as well as for experts, and more importantly, is fun to program with. This book aims to help you learn this wonderful language and show how to get things done quickly and painlessly - in effect 'The Anti-venom to your programming problems'.
+Python é provavelmente umas das poucas linguagens de programação que é tanto simples como poderosa. Isto é bom para iniciantes bem como para experts, e mais importante, é divertida para programar. Este livro almeja ajudar você a aprender esta linguagem maravilhosa e mostrar como realizar coisas de maneira rápida e indolor - na verdade 'O antídoto para seus problemas de programação'.
 
-## Who This Book Is For
+## Para Quem é Este Livro
 
-This book serves as a guide or tutorial to the Python programming language. It is mainly targeted at newbies. It is useful for experienced programmers as well.
+Este livro serve como um guia ou tutorial para a linguagem de programação Python. Foca principalmente nos iniciantes. Assim como é útil para programadores experientes.
 
-The aim is that if all you know about computers is how to save text files, then you can learn Python from this book. If you have previous programming experience, then you can also learn Python from this book.
+O objetivo é que se tudo que você sabe sobre computadores é como salvar arquivos de texto, então você pode aprender Python deste livro. Se você possui experiência prévia em programação, então você também pode aprender Python deste livro.
 
-If you do have previous programming experience, you will be interested in the differences between Python and your favorite programming language - I have highlighted many such differences. A little warning though, Python is soon going to become your favorite programming language!
+Se você possui experiência prévia em programação, você estará interessado nas diferenças entre Python e sua linguagem de programação favorita - eu ilustro muitas dessa diferenças. Um pequeno alerta porém, Python brevemente será sua linguagem de programação favorita!
 
-## Official Website
+## Website Oficial
 
-The official website of the book is {{ book.officialUrl }} where you can read the whole book online, download the latest versions of the book, [buy a printed hard copy]({{ book.buyBookUrl }}) and also send me feedback.
+O website oficial do livro é {{ bool.officialUrl }} onde você pode ler todo o livro online, baixar as últimas versões do livro, [comprar uma cópia impressa]({{ book.buyBookUrl }}) e também enviar para mim algum feeedback.
 
-## Something To Think About
+## Algo Para se Pensar
 
-> There are two ways of constructing a software design: one way is to make it so simple that there are obviously no deficiencies; the other is to make it so complicated that there are no obvious deficiencies. -- C. A. R. Hoare
+> Há duas maneiras de construir um design de software: uma maneira é fazê-lo tão simples que obviamente não haverá deficiências; a outra é torná-lo tão complicado que não haverá deficiências óbvias. -- C. A. R. Hoare
 
 <!-- -->
 
-> Success in life is a matter not so much of talent and opportunity as of concentration and perseverance. -- C. W. Wendte
+> Sucesso na vida não é o tanto de talento e oportunidade mas de concentração e perseverança. -- C. W. Wendte
