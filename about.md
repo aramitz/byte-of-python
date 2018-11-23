@@ -1,35 +1,35 @@
-# Appendix: Colophon {#colophon}
+# Apêndice: Colofão {#colophon}
 
-Almost all of the software that I have used in the creation of this book are [FLOSS](./floss.md#floss).
+Quase todo o softare que eu utilizei na criação deste livro é [FLOSS](./floss.md#floss).
 
-## Birth of the Book
+## Nascimento do Livro
 
-In the first draft of this book, I had used Red Hat 9.0 Linux as the foundation of my setup and in the sixth draft, I used Fedora Core 3 Linux as the basis of my setup.
+No primeiro esboço deste livro, eu utilizei o Red Hat Linux 9.0 como base para minha configuração e no sexto esboço, eu utilizei o Linux Fedora Core 3 como base de minha configuração.
 
-Initially, I was using KWord to write the book (as explained in the [history lesson](./revision_history.md#history-lesson)).
+Inicialmente, eu utilizei KWord para escrever o livro (como explicado em [lição de história](./revision_history.md#history-lesson)).
 
-## Teenage Years
+## Anos da Adolescência
 
-Later, I switched to DocBook XML using Kate but I found it too tedious. So, I switched to OpenOffice which was just excellent with the level of control it provided for formatting as well as the PDF generation, but it produced very sloppy HTML from the document.
+Mais tarde, eu mudei para DocBook XML utilizando Kate mas achei muito tedioso. Então, eu mudei para OpenOffice que foi excelente como o nível de controle que proporcionou para formatação bem como geração de PDF, mas o HTML produzido era bem desleixado.
 
-Finally, I discovered XEmacs and I rewrote the book from scratch in DocBook XML (again) after I decided that this format was the long term solution.
+Finalmente, eu descobri XEmacs e reescrevi o livro do zero em DocBook XML (novamente) após eu decidir que este formato foi a solução de longo prazo.
 
-In the sixth draft, I decided to use Quanta+ to do all the editing. The standard XSL stylesheets that came with Fedora Core 3 Linux were being used. However, I had written a CSS document to give color and style to the HTML pages. I had also written a crude lexical analyzer, in Python of course, which automatically provides syntax highlighting to all the program listings.
+No sexto esboço, eu decidi usar Quanta+ para fazer toda a edição. O estilos XSL base que vinham com o Fedora Core 3 Linux foram utilizados. Todavia, escrevi um documento CSS para dar cor e estilo às páginas HTML. Eu também escrevi um anlisador léxico bruto, em Python óbvio, que automaticamente proporcionou destaque de sintaxe para toda a listagem de programa.
 
-For the seventh draft, I was using [MediaWiki](http://www.mediawiki.org) as the basis of my setup. I used to edit everything online and the readers can directly read/edit/discuss within the wiki website, but I ended up spending more time fighting spam than writing.
+Para o sétimo esboço, eu utilizei [MediaWiki](http://www.mediawiki.org) como base de minha configuração. Eu costumava editar tudo online e os leitores podiam ler/editar/discutir diretamente no site wiki, mas acabei gastando mais tempo lutando contra spam que escrevendo.
 
-For the eight draft, I used [Vim]({{ book.vimBookUrl }}), [Pandoc](http://johnmacfarlane.net/pandoc/README.html), and Mac OS X.
+Para o oitavo esboço, eu utilizei [Vim]({{ book.vimBookUrl }}), [Pandoc](http://johnmacfarlane.net/pandoc/README.html), e Mac OS X.
 
-For the ninth draft, I switched to [AsciiDoc format](http://asciidoctor.org/docs/what-is-asciidoc/) and used [Emacs 24.3](http://www.masteringemacs.org/articles/2013/03/11/whats-new-emacs-24-3/),
+Para o nono esboço, eu troquei para [formato AsciiDoc](http://asciidoctor.org/docs/what-is-asciidoc/) e utilizei [Emacs 24.3](http://www.masteringemacs.org/articles/2013/03/11/whats-new-emacs-24-3/),
 [tomorrow theme](https://github.com/chriskempson/tomorrow-theme),
-[Fira Mono font](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/#download-primary) and [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki) to write.
+[Fira Mono font](https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/#download-primary) e [adoc-mode](https://github.com/sensorflo/adoc-mode/wiki) para escrever.
 
-## Now
+## Agora
 
-2016: I got tired of several minor rendering issues in AsciiDoctor, like the `++` in `C/C++` would disappear and it was hard to keep track of escaping such minor things. Plus, I had become reluctant to edit the text because of the complex Asciidoc format.
+2016: cansei de diversas pequenas falhas de renderização em AsciiDoctor, como o `++` em `C/++` desaparecer e era muito difícil manter controle de escapar tais coisas mínimas. Ademais, tornei-me relutante em alterar o texto devido à complexidade do formato Asciidoc.
 
-For the tenth draft, I switched to writing in Markdown + [GitBook](https://www.gitbook.com) format, using the [Spacemacs editor](http://spacemacs.org).
+Para o décimo esboço, eu troquei para o formato Markdown + [GitBook](https://www.gitbook.com), usando o [editor Spacemacs](http://spacemacs.org).
 
-## About the Author
+## Sobre o Autor
 
-See {{ book.authorUrl }}
+Veja {{ book.authorUrl }}
