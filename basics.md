@@ -1,204 +1,206 @@
-# Basics
+# Básico
 
-Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
+Apenas exibir `hello world` não é suficiente, é? Você quer fazer mais que isso - você quer obter alguma entrada, manipulá-la e produzir algo disso. Podemos alcançar isso em Python usando constantes e variáveis, e aprenderemos outros conceitos neste capítulo.
 
-## Comments
+## Comentários
 
-_Comments_ are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
+_Comentário_ é qualquer texto à direita do símbolo `#` e é principalmente útil como nota para o leitor do programa.
 
-For example:
+Por exemplo:
 
 ```python
-print('hello world') # Note that print is a function
+print('hello world') # Note que print é uma função
 ```
 
-or:
+ou:
 
 ```python
-# Note that print is a function
+# Note que print é uma função
 print('hello world')
 ```
 
-Use as many useful comments as you can in your program to:
+Utilize quantos comentários você puder em seu programa para:
 
-- explain assumptions
-- explain important decisions
-- explain important details
-- explain problems you're trying to solve
-- explain problems you're trying to overcome in your program, etc.
+- explicar suposições
+- explicar decisões importantes
+- explicar detalhes importantes
+- explicar problemas que você está tentando solucionar
+- explicar problemas que você está tentando superar em seu programa, etc.
 
-[*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
+[*O código lhe diz o como, os comentários devem dizer o porquê*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
 
-This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
+Isto é útil para os leitores de seu programa para que eles possam facilmente compreender o que o programa está fazendo. Lembre-se, essa pessoa pode ser você após seis meses!
 
-## Literal Constants
+## Constantes Literais
 
-An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'` or `"It's a string!"`.
+Um exemplo de uma constante literal é um número como `5`, `1.23`, ou uma cadeia de caracteres como `'This is a string'` ou `"It's a string!"`.
 
-It is called a literal because it is _literal_ - you use its value literally. The number `2` always represents itself and nothing else - it is a _constant_ because its value cannot be changed. Hence, all these are referred to as literal constants.
+É chamado de literal porque ela é _literal_ - você utiliza seu valor literalmente. O número `2` sempre representa ele mesmo e nada mais - ele é uma _constante_ porque seu valor não pode ser modificado. Assim, todos eles são referidos como constantes literais.
 
-## Numbers
+## Números
 
-Numbers are mainly of two types - integers and floats.
+Números são principalmente de dois tipos - inteiros e de ponto flutuante.
 
-An example of an integer is `2` which is just a whole number.
+Um exemplo de um inteiro é `2` que á apenas um número inteiro.
 
-Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
+Exemplos de números de ponto flutuante (ou _floats_ para simplificar) são `3.23` e `52.3E-4`. A notação `E` indica potências de 10. Neste caso, `52.3E-4` representa `52.3 * 10^-4^`.
 
-> **Note for Experienced Programmers**
+> **Nota para Programadores Experientes**
 > 
-> There is no separate `long` type. The `int` type can be an integer of any size.
+> Não há um tipo separado `long`. O tipo `int` pode ser um inteiro de qualquer tamanho.
 
-## Strings
+## Cadeias de Caracteres (_string_)
 
-A string is a _sequence_ of _characters_. Strings are basically just a bunch of words.
+Uma cadeia de caracteres (_string_) é uma _sequência_ de _caracteres_. Cadeias de caracteres são basicamente apenas um bando de palavras.
 
-You will be using strings in almost every Python program that you write, so pay attention to the following part.
+Você utilizará cadeias de caracteres em quase todo programa Python que você escrever, logo preste atenção na parte a seguir.
 
-### Single Quote
+### Aspa Simples
 
-You can specify strings using single quotes such as `'Quote me on this'`.
+Você pode especificar cadeias de caracteres utilizando aspas simples tais como `'Quote me on this'`.
 
-All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+Todo espaço em branco, isto é, espaços e tabulações, são preservados como estão.
 
-### Double Quotes
+### Aspas Duplas
 
-Strings in double quotes work exactly the same way as strings in single quotes. An example is `"What's your name?"`.
+Cadeias de caracteres em aspas duplas operam exatamente da mesma maneira que cadeias de caracteres entre aspas simples. Um exemplo é `"Qual é o seu nome?"`.
 
-### Triple Quotes {#triple-quotes}
+### Aspas Triplas {#triple-quotes}
 
-You can specify multi-line strings using triple quotes - (`"""` or `'''`). You can use single quotes and double quotes freely within the triple quotes. An example is:
+Você pode especificar cadeias de caracteres em múltiplas linhas utilizando aspas triplas - (`"""` ou `'''`). Você pode utilizar aspas simples ou aspas duplar livremente dentro das aspas triplas. Um exemplo é:
 
 ```python
-'''This is a multi-line string. This is the first line.
-This is the second line.
-"What's your name?," I asked.
-He said "Bond, James Bond."
+'''Esta é uma cadeia de caracteres de múltiplas linhas. Esta é a primeira linha.
+Esta é a segunda linha.
+"Qual é o seu nome?," eu perguntei.
+Ele disse "Bond, James Bond."
 '''
 ```
 
-### Strings Are Immutable
+### Cadeias de Caracteres são Imutáveis
 
-This means that once you have created a string, you cannot change it. Although this might seem like
-a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
-we see later on.
+Isto significa que uma vez que tenha criado a cadeia de caracteres, você não pode modificá-la. Embora isso possa parecer uma coisa ruim, realmente não é. Veremos porque isto não é uma limitação nos vários programas que observaremos adiante.
 
-> **Note for C/C++ Programmers**
+> **Nota para Programadores C/C++**
 > 
-> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
+> Não há um tipo `char` separado em Python. Não necessidade real para ele e tenho certeze que você não sentirá falta.
 
 <!-- -->
 
-> **Note for Perl/PHP Programmers**
+> **Nota para Programadores Perl/PHP**
 > 
-> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
+> Lembre-se que cadeias de caracteres entre aspas simples e aspas duplas representam a mesma coisa - não diferem de forma nenhuma.
 
-### The format method
+### O método format
 
-Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
+Ás vezes queremos construir cadeias de caracteres a partir de outra informação. Isto é onde o método `format()` é útil.
 
-Save the following lines as a file `str_format.py`:
+Salve as seguintes linhas como um arquivo `str_format.py`:
 
 ```python
-age = 20
-name = 'Swaroop'
+idade = 20
+nome = 'Swaroop'
 
-print('{0} was {1} years old when he wrote this book'.format(name, age))
-print('Why is {0} playing with that python?'.format(name))
+print('{0} tinha {1} anos quando ele escreveu este livro'.format(nome, idade))
+print('Por que {0} está brincando com aquela píton?'.format(nome))
 ```
 
-Output:
+Saída:
 
 ```
 $ python str_format.py
-Swaroop was 20 years old when he wrote this book
-Why is Swaroop playing with that python?
+Swaroop tinha 20 anos quando ele escreveu este livro
+Por que Swaroop está brincando com aquela píton?
 ```
 
-**How It Works**
+**Como Funciona**
 
-A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
+Uma cadeia de caracteres pode utilizar certas especificações e subsequentemente, o método `format` pode ser chamado para substituir estas especificações que correspondam à argumentos no método `format`.
 
-Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
+Observe o primeiro uso onde utilizamos `{0}` e isso corresponde à variável `nome` que é o primeiro argumento do método format.
+De forma similar, a segunda especificação é `{1}` correspondendo à `idade` que é o segundo argumento para o método format. Note que Python começa contando de 0 que significa que a primeira posição está no índice 0, a segunda posição no índice 1, e assim por diante.
 
-Notice that we could have achieved the same using string concatenation:
+Perceba que poderíamos alcançar o mesmo utilizando concatenação de cadeia de caracteres:
 
 ```python
-name + ' is ' + str(age) + ' years old'
+nome + ' é ' + str(idade) + ' anos'
 ```
 
-but that is much uglier and error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
+mas isso é muito feio e sujeito a erros. Segundo, a conversão para cadeia de caracteres poderia ser feita automaticamente pelo método `format` ao invés da conversão explícita necessária para cadeia de caracteres neste caso. Terceiro, ao usar o método `format`, podemos modificar a mensagem sem ter de manipular as variáveis utilizadas e vice-versa.
 
-Also note that the numbers are optional, so you could have also written as:
+Note também que os número são opcionais, logo você poderia também ter escrito como:
 
 ```python
-age = 20
-name = 'Swaroop'
+idade = 20
+nome = 'Swaroop'
 
-print('{} was {} years old when he wrote this book'.format(name, age))
-print('Why is {} playing with that python?'.format(name))
+print('{} tinha {} anos quando ele escreveu este livro'.format(nome, idade))
+print('Por que {} está brincando com aquela píton?'.format(nome))
 ```
 
-which will give the same exact output as the previous program.
+que dará a mesma saída que a do programa anterior.
 
-We can also name the parameters:
+
+Podemos também nomear os parâmetros:
 
 ```python
-age = 20
-name = 'Swaroop'
+idade = 20
+nome = 'Swaroop'
 
-print('{name} was {age} years old when he wrote this book'.format(name=name, age=age))
-print('Why is {name} playing with that python?'.format(name=name))
+print('{nome} tinha {idade} anos quando ele escreveu este livro'.format(nome=nome, idade=idade))
+print('Por que {nome} está brincando com aquela píton?'.format(nome=nome))
 ```
 
-which will give the same exact output as the previous program.
+que dará a mesma saída que o programa anterior.
 
-Python 3.6 introduced a shorter way to do named parameters, called "f-strings":
+Python 3.6 introduziu um atalho para parâmetros nomeados, chamado "f-strings":
 
 ```python
-age = 20
-name = 'Swaroop'
+idade = 20
+nome = 'Swaroop'
 
-print(f'{name} was {age} years old when he wrote this book')  # notice the 'f' before the string
-print(f'Why is {name} playing with that python?')  # notice the 'f' before the string
+print(f'{nome} tinha {idade} quando ele escreveu este livro')  # perceba o  'f' antes da cadeia de caracteres
+print(f'Por que {nome} está brincando com aquela píton?')  # perceba o  'f' antes da cadeia de caracteres
 ```
 
-which will give the same exact output as the previous program.
+que dará a mesma saída que o programa anterior.
 
-What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
+
+O que Python faz no método `format` é que substitui cada valor de argumento no local da especificação. Existem mais especificações detalhadas tais como:
 
 ```python
-# decimal (.) precision of 3 for float '0.333'
+# decimal (.) precisão de 3 para o ponto flutuante '0.333'
 print('{0:.3f}'.format(1.0/3))
-# fill with underscores (_) with the text centered
-# (^) to 11 width '___hello___'
+# preencher com underscores (_) com o texto centralizado
+# (^) até 11 caracteres de largura '___hello___'
 print('{0:_^11}'.format('hello'))
-# keyword-based 'Swaroop wrote A Byte of Python'
-print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
+# base em palavras chave 'Swaroop wrote A Byte of Python'
+print('{nome} escreveu {livro}'.format(nome='Swaroop', livro='A Byte of Python'))
 ```
 
-Output:
+Saída:
 
 ```
 0.333
 ___hello___
-Swaroop wrote A Byte of Python
+Swaroop escreveu A Byte of Python
 ```
 
-Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
+Uma vez que estamos discutindo formatação, note que `print` sempre termina com um caractere invisível de "nova linha" (`\n`) de forma que chamadas repetidas a `print` exibirão o resultado em linhas distintas. Para evitar este caractere de nova linha ser exbido, você pode definir que deve terminar (`end`) com um branco:
 
 ```python
 print('a', end='')
 print('b', end='')
 ```
 
-Output is:
+Saída é:
 
 ```
 ab
 ```
 
-Or you can `end` with a space:
+Ou você pode encerrar (`end`) com um espaço:
+
 
 ```python
 print('a', end=' ')
@@ -206,40 +208,40 @@ print('b', end=' ')
 print('c')
 ```
 
-Output is:
+Saída é:
 
 ```
 a b c
 ```
 
-### Escape Sequences
+### Sequências de Escape
 
-Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
+Suponha que você quer ter uma cadeia de caracteres que contenha uma aspa simples (`'`), como você especifica essa cadeia de caracteres? Por exemplo, a cadeia de caracteres é `"Qual é o seu nome?"`. Você não pode especificar `'Qual é o seu 'nome''` porque Python ficará confuso sobre onde a cadeia de caracteres começa e termina. Logo, você terá de especificar que está aspa simples não indica o fim da cadeia de caracteres. Isto pode ser feito com a ajuda do que é chamado uma _sequência de escape_. Você especifica a aspa simples como `\'`: perceba a barra invertida. Agora, você pode especificar a cadeia de caracteres como `'Qual o seu \'nome\'?`.
 
-Another way of specifying this specific string would be `"What's your name?"` i.e. using double quotes. Similarly, you have to use an escape sequence for using a double quote itself in a double quoted string. Also, you have to indicate the backslash itself using the escape sequence `\\`.
+Outra maneira de especificar esta cadeia de caracteres específica seria `"Qual o seu 'nome'?"` entre aspas simples. De forma similar, você deve usar uma sequência de escape ao utilizar aspas duplas em cadeias de caracteres entre aspas duplas. Você também deve indicar a barra invertida usando a sequência de escpae `\\`.
 
-What if you wanted to specify a two-line string? One way is to use a triple-quoted string as shown [previously](#triple-quotes) or you can use an escape sequence for the newline character - `\n` to indicate the start of a new line. An example is:
-
-```python
-'This is the first line\nThis is the second line'
-```
-
-Another useful escape sequence to know is the tab: `\t`. There are many more escape sequences but I have mentioned only the most useful ones here.
-
-One thing to note is that in a string, a single backslash at the end of the line indicates that the string is continued in the next line, but no newline is added. For example:
+E se você quisesse especificare uma cadeia de caracteres de duas linhas? Um modo é utilizar um cadeia de caracteres de aspas triplas como apresentado [anteriormente](#triple-quotes) ou você pode utilizar uma sequência de escape para o caractere de nova linha - `\n` para indicar o início de uma nova linha. Um exemplo é:
 
 ```python
-"This is the first sentence. \
-This is the second sentence."
+'Isto é a primeira linha\nIsto é a segunda linha'
 ```
 
-is equivalent to
+Outra sequência de escape útil em saber é a tabulação `\t`. Há muito mais sequências de escape mas eu mencionei somente as mais úteis aqui.
+
+Uma coisa a considerar é que em uma cadeia de caracteres, uma simples barra invertida no fim da linha indica que a cadeia de caracteres continua na próxima linha, mas nenhuma nova linha é adicionada. por exemplo:
 
 ```python
-"This is the first sentence. This is the second sentence."
+"Esta é a primeira sentença. \
+Esta é a segunda sentença."
 ```
 
-### Raw String
+equivale a
+
+```python
+"Esta é a primeira sentença. Esta é a segunda sentença."
+```
+
+### Cadeia de Caracteres Bruta
 
 If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
 
