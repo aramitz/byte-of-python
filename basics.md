@@ -243,183 +243,184 @@ equivale a
 
 ### Cadeia de Caracteres Bruta
 
-If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
+Se você precisa especificar algumas cadeias de caracteres onde nenhum processamento especial precisa ser feito, como manipulação de sequências de escape, então tudo que você precisa é especificar uma cadeia de caracteres bruta (_raw_) prefixando-a com `r` ou `R`. Um exemplo é:
 
 ```python
-r"Newlines are indicated by \n"
+r"Novas linhas são indicadas por \n"
 ```
 
-> **Note for Regular Expression Users**
+> **Nota para Usuários de Expressões Regulares**
 > 
-> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
+> Sempre utilize cadeias de caracteres brutas ao lidar com expressões regulares. De outra forma, um número excessivo de barras invertidas será necessário. Por exemplo, _backreferences_ podem ser referidas como `\\'1` ou `\1'`.
 
-## Variable
+## Variável
 
-Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
+Utilizar somente constantes literais pode tornar-se rapidamente tedioso - necessitamos de algum meio para armazenar qualquer informação e manipular esses valores. Nesse momento as _variáveis_ entram em cena. Variáveis são exatamente o que o nome implica - seu valor pode variar, isto é, você pode armazenar qualquer coisa utilizando uma variável. Variáveis são apenas partes da memória de seu computador onde você armazena alguma informação. Ao contrário de constantes literais, você precisa de algum método para acessar estas variáveis e assim elas recebem nomes.
 
-## Identifier Naming
+## Nomeação de Identificadores
 
-Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
+Variáveis são exemplos de identificadores. _Identificadores_ são nomes dados para identificar _algo_. Há algumas regras que você tem de seguir para nomear identificadores:
 
-- The first character of the identifier must be a letter of the alphabet (uppercase ASCII or lowercase ASCII or Unicode character) or an underscore (`_`).
-- The rest of the identifier name can consist of letters (uppercase ASCII or lowercase ASCII or Unicode character), underscores (`_`) or digits (0-9).
-- Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
-- Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
+- O primeiro caractere do identificador deve ser uma letra do alfabeto (caracteres ASCII maiúsculos e minúsculos ou caracteres Unicode) ou um sublinha (`_`).
+- O restante do nome do identificador pode consistir de letras (caracteres ASCII maiúsculos e minúsculos ou caracteres Unicode), sublinhas (`_`) ou dígitos (0-9).
+- Nomes de identificadores diferenciam maiúsculas de minúsculas. Por exemplo, `meunome` e `meuNome` não são a mesma coisa. Note o `n` minúsculo no primeiro e o `N` maiúsculo no último.
+- Exemplos de nomes de identificadores _válidos_ são `i`, `nome_2_3`. Exemplos de nomes de identificadores _inválidos_ são `2coisas`, `isto está espaçado`, `meu-nome` e `>a1b2_c3`.
 
-## Data Types
 
-Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
+## Tipos de Dados
 
-## Object
+Variáveis podem armazenar valores de tipos diferentes chamados _tipos de dados_. Os tipos básicos são números e cadeias de caracteres, sobre os quais já discutimos. Em capítulos posteriores, veremos como criar nossos próprios tipos usando [classes](./oop.md#classes).
 
-Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
+## Objetos
 
-> **Note for Object Oriented Programming users**:
+Lembre-se, Python refere-se a tudo que é utilizado em um programa como um _objeto_. Isto é entendido em sentido genérico. Ao invés de dizer "o _alguma coisa_", dizemos "o _objeto_".
+
+> **Nota para usuários de Programação Orientada a Objetos**:
 >
-> Python is strongly object-oriented in the sense that everything is an object including numbers, strings and functions.
+> Python é fortemente orientado a objetos no sentido de que tudo é um objeto incluindo números, cadeias de caracteres e funções.
 
-We will now see how to use variables along with literal constants. Save the following example and run the program.
+Veremos agora como usar variáveis juntamente com constantes literais. Salve o exemplo seguinte e execute o programa.
 
-## How to write Python programs
+## Como escrever programas em Python
 
-Henceforth, the standard procedure to save and run a Python program is as follows:
+Daqui em diante, o procedimento padrão para salvar e executar um programa em Python é o seguinte:
 
-### For PyCharm
+### Para PyCharm
 
-1. Open [PyCharm](./first_steps.md#pycharm).
-2. Create new file with the filename mentioned.
-3. Type the program code given in the example.
-4. Right-click and run the current file.
+1. Abra o [PyCharm](./first_steps.md#pycharm).
+2. Crie um novo arquivo com o nome informado.
+3. Digite o código do programa dado no exemplo.
+4. Clique com o botão direito e execute o arquivo corrente.
 
-NOTE: Whenever you have to provide [command line arguments](./modules.md#modules), click on `Run` -> `Edit Configurations` and type the arguments in the `Script parameters:` section and click the `OK` button:
+NOTA: Sempre que você tiver que fornecer [argumentos de linha de comando](./modules.md#modules), clique em `Run` -> `Edit Configurations` e digite o tipo dos argumentos na seção `Script parameters:` e clique no botão `OK`:
 
-![PyCharm command line arguments](./img/pycharm_command_line_arguments.png)
+![argumentos de linha de comando no PyCharm](./img/pycharm_command_line_arguments.png)
 
-### For other editors
+### Para outros editores
 
-1. Open your editor of choice.
-2. Type the program code given in the example.
-3. Save it as a file with the filename mentioned.
-4. Run the interpreter with the command `python program.py` to run the program.
+1. Abra seu editor de preferência.
+2. Digite o código do programa dado no exemplo.
+3. Salve-o como um arquivo com o nome mencionado.
+4. Execute o interpretador com o comando `python program.py` para executar o programa.
 
-### Example: Using Variables And Literal Constants
+### Exemplo: Usando Variáveis e Constantes Literais
 
-Type and run the following program:
+Digite e execute o seguinte programa:
 
 ```python
-# Filename : var.py
+# Arquivo : var.py
 i = 5
 print(i)
 i = i + 1
 print(i)
 
-s = '''This is a multi-line string.
-This is the second line.'''
+s = '''Isto é uma cadeia de caracteres de múltiplas linhas.
+Esta é a segunda linha.'''
 print(s)
 ```
 
-Output:
+Saída:
 
 ```
 5
 6
-This is a multi-line string.
-This is the second line.
+Isto é uma cadeia de caracteres de múltiplas linhas.
+Esta é a segunda linha.
 ```
 
-**How It Works**
+**Como Funciona**
 
-Here's how this program works. First, we assign the literal constant value `5` to the variable `i` using the assignment operator (`=`). This line is called a statement because it states that something should be done and in this case, we connect the variable name `i` to the value `5`. Next, we print the value of `i` using the `print` statement which, unsurprisingly, just prints the value of the variable to the screen.
+Aqui está como o programa funciona. Primeiro, atribuímos a constante literal `5` à variável `i` usando o operador de atribuição (`=`). Esta linha é chamada uma declaração porque ela declara que algo deve ser feito e neste caso, conectamos a variável de nome `i` ao valor `5`. Em seguida, exibimos o valor de `i` usando o comando `print`, o qual, surpreendentemente, apenas exibe o valor da variável na tela.
 
-Then we add `1` to the value stored in `i` and store it back. We then print it and expectedly, we get the value `6`.
+Após isso, adicionamos `1` ao valor armazenado em `i` e armazenamos o valor novamente. Então imprimimos o valor e de forma esperada, obtemos o valor `6`.
 
-Similarly, we assign the literal string to the variable `s` and then print it.
+De maneira similar, atribuímos a cadeia de caracteres literal à variável `s` e a exibimos.
 
-> **Note for static language programmers**
+> **Nota para programadores de linguagens estáticas**
 > 
-> Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
+> Variáveis são usadas pela simples atribuição de um valor a elas. Nenhuma declaração ou definição de tipo de dados é necessária/utilizada.
 
-## Logical And Physical Line
+## Linha Lógica e Linha Física
 
-A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
+Uma linha física é o que você _vê_ quando escreve o programa. Uma linha lógica é o que _Python vê_ como um simples comando. Python implícitamente assume que cada _linha física_ corresponde a uma _linha lógica_.
 
-An example of a logical line is a statement like `print 'hello world'` - if this was on a line by itself (as you see it in an editor), then this also corresponds to a physical line.
+Um exemplo de uma linha lógica é um comando como `print 'hello world'` - se isto estiver em uma única linha (assim como você vê no editor), então isso corresponde também a uma linha física.
 
-Implicitly, Python encourages the use of a single statement per line which makes code more readable.
+Implícitamente, Python encoraja o uso de um simples comando por linha o que torna o código mais legível.
 
-If you want to specify more than one logical line on a single physical line, then you have to explicitly specify this using a semicolon (`;`) which indicates the end of a logical line/statement. For example:
+Se você quer especificar mais de uma linha lógica em uma simples linha física, então você tem de especificar explícitamente isto usando um ponto e vírgula (`;`) que indica o fim de uma linha/comando lógico. Por exemplo:
 
 ```python
 i = 5
 print(i)
 ```
 
-is effectively same as
+efetivamente é o mesmo que
 
 ```python
 i = 5;
 print(i);
 ```
 
-which is also same as
+o qual é também o mesmo que
 
 ```python
 i = 5; print(i);
 ```
 
-and same as
+e o mesmo que
 
 ```python
 i = 5; print(i)
 ```
 
-However, I *strongly recommend* that you stick to *writing a maximum of a single logical line on each single physical line*. The idea is that you should never use the semicolon. In fact, I have _never_ used or even seen a semicolon in a Python program.
+Porém, eu *recomendo fortemente* que você fique com *escrever o máximo de uma simples linha lógica em cada simples linha física*. A ideia é que você nunca deve usar o ponto e vírgula. De fato, eu _nunca_ usei ou vi um ponto e vírgula em um programa Python.
 
-There is one kind of situation where this concept is really useful: if you have a long line of code, you can break it into multiple physical lines by using the backslash. This is referred to as _explicit line joining_:
+Há um tipo de situação onde este conceito é realmente útil: se você tiver uma linha longa de código você pode quebrá-la em múltiplas linhas físicas usando a barra invertida. Isto é referido como _agrupamento de linha explícita_:
 
 ```python
-s = 'This is a string. \
-This continues the string.'
+s = 'Isto é uma cadeia de caracteres. \
+Isto continua a cadeia de caracteres.'
 print(s)
 ```
 
-Output:
+Saída:
 
 ```
-This is a string. This continues the string.
+Isto é uma cadeia de caracteres. Isto continua a cadeia de caracteres.
 ```
 
-Similarly,
+De forma análoga,
 
 ```python
 i = \
 5
 ```
 
-is the same as
+é o mesmo que
 
 ```python
 i = 5
 ```
 
-Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
+Às vezes, há uma suposição implícita onde você não precisa utilizar uma barra invertida. Este é o caso onde a linha lógica possui um parêntese inicial, um colchete inicial ou uma chave inicial mas sem um no final. Isto é chamado *agrupamento implícito de linha*. Você pode ver isso em ação quando escrevemos programas usando [list](./data_structures.md#lists) em capítulos posteriores.
 
-## Indentation
+## Indentação
 
-Whitespace is important in Python. Actually, *whitespace at the beginning of the line is important*. This is called _indentation_. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+Espaço em branco é importante em Python. Na realidade, *espaço em branco no início da linha é importante*. Isto é chamado _indentação_. Espaço em branco inicial (espaços e tabulações) no início de uma linha lógica é usado para determinar o nível de indentação da linha lógica, o qual por sua vez é utilizado para determinar o agrupamento dos comandos.
 
-This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
+Isto significa que comandos que seguem juntos _devem_ ter a mesma indentação. Cada conjunto de comandos é chamado *bloco*. Veremos exemplos de como os blocos são importantes em capítulos posteriores.
 
-One thing you should remember is that wrong indentation can give rise to errors. For example:
+Uma coisa que você deve lembrar é que indentação errada pode dar origem a erros. Por exemplo:
 
 ```python
 i = 5
-# Error below! Notice a single space at the start of the line
- print('Value is', i)
-print('I repeat, the value is', i)
+# Erro abaixo! Perceba um espaço simples no início da linha
+ print('Valor é', i)
+print('Eu repito, o valor é', i)
 ```
 
-When you run this, you get the following error:
+Ao executar isso, você obtem o seguinte erro:
 
 ```
   File "whitespace.py", line 3
@@ -428,19 +429,18 @@ When you run this, you get the following error:
 IndentationError: unexpected indent
 ```
 
-Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
+Perceba que há um espaço simples no início da segunda linha. O erro indicado pelo Pythonnos informa que a sintaxe do programa está inválida, isto é, o programa não foi escrito adequadamente. O que isso significa para você é que _você não pode iniciar de forma arbitrária novos blocos de comandos_ (exceto para o bloco principal que você esteja usando, obviamente). Os casos onde você pode usar novos blocos será detalhado em capítulos posteriores como no [controle de fluxo](./control_flow.md#control_flow).
 
-> **How to indent**
+> **Como indentar**
 > 
-> Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
+> Use quatro espaços para indentação. Esta é a recomendação oficial da linguagem Python. Bons editores automaticamente farão isso por você. Certifique-se de usar um número consistente de espaços para indentação, ao contrário seu programa não irá rodar ou apresentará um comportamento anormal.
 
 <!-- -->
 
-> **Note to static language programmers**
+> **Nota para programadores de linguagens estáticas**
 > 
-> Python will always use indentation for blocks and will never use braces. Run `from __future__ import braces` to learn more.
+> Python sempre usa indentação para e blocos e nunca usará chaves. Execute `from __future__ import braces`para aprender mais.
 
-## Summary
+## Sumário
 
-Now that we have gone through many nitty-gritty details, we can move on to more interesting stuff such as control flow statements. Be sure to become comfortable with what you have read in this chapter.
-
+Agora que seguimos através de muitos detalhes minuciosos, podemos mover-nos para coisas mais interessantes como comandos para controle de fluxo. Certifique-se de estar confortável com o que você leu neste capítulo.
