@@ -1,6 +1,6 @@
 # Apêndice: Colofão {#colophon}
 
-Quase todo o softare que eu utilizei na criação deste livro é [FLOSS](./floss.md#floss).
+Quase todo o software que eu utilizei na criação deste livro é [FLOSS](./floss.md#floss).
 
 ## Nascimento do Livro
 
