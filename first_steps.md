@@ -1,24 +1,24 @@
-# First Steps
+# Primeiros Passos
 
-We will now see how to run a traditional 'Hello World' program in Python. This will teach you how to write, save and run Python programs.
+Agora veremos como executar o tradicional programa 'Hello World' em Python. Isto ensinará a você como escrever, salvar e executar programas em Python.
 
-There are two ways of using Python to run your program - using the interactive interpreter prompt or using a source file. We will now see how to use both of these methods.
+Há dois modos de utilização do Python para executar seu programa - usando o prompt do interpretador interativo ou usando um arquivo fonte. Veremos agora como usar ambos.
 
-## Using The Interpreter Prompt
+## Usando o Prompt do Interpretador
 
-Open the terminal in your operating system (as discussed previously in the [Installation](./installation.md#installation) chapter) and then open the Python prompt by typing `python3` and pressing `[enter]` key.
+Abra o terminal em seu sistema operacional (como discutido previamente no capítulo [Instalação](./installation.md#installation)) e então abra o prompt Python digitando `python3` e pressionando a tecla `[enter]`.
 
-Once you have started Python, you should see `>>>` where you can start typing stuff. This is called the _Python interpreter prompt_.
+Assim que você tiver iniciado o Python, você deverá ver `>>>`, onde você pode começar a digitar coisas. Isto é chamado _prompt do interpretador Python_.
 
-At the Python interpreter prompt, type:
+No prompt do interpretador Python, digite:
 
 ```python
 print("Hello World")
 ```
 
-followed by the `[enter]` key. You should see the words `Hello World` printed to the screen.
+seguindo da tecla `[enter]`. Você deverá ver as palavras `Hello World` exeibidas na tela.
 
-Here is an example of what you should be seeing, when using a Mac OS X computer. The details about the Python software will differ based on your computer, but the part from the prompt (i.e. from `>>>` onwards) should be the same regardless of the operating system.
+Aqui está um exemplo do que você deverá ver, quando usar um computador com Mac OS X. Os detalhes sobre o software Python serão diferentes conforme seu computador, mas a parte a partir do prompt (isto é, dos caracteres `>>>` em diante) deverão ser os mesmos independentemente de sistema operacional.
 
 <!-- The output should match pythonVersion variable in book.json -->
 ```python
@@ -30,7 +30,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 Hello World
 ```
 
-Notice that Python gives you the output of the line immediately! What you just entered is a single Python _statement_. We use `print` to (unsurprisingly) print any value that you supply to it. Here, we are supplying the text `Hello World` and this is promptly printed to the screen.
+Perceba que o Python te dá a saída da linha imediatamente! O que você acabou de informar é um simples _comando_ Python. Usamos `print` para (sem surpresa aqui) imprimir qualquer valor que você fornecer para ela. Aqui, fornecemos o texto `Hello World` e isso é rapidamente impresso na tela.
 
 ### How to Quit the Interpreter Prompt
 
