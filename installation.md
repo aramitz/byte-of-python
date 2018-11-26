@@ -32,7 +32,7 @@ Para versões anteriores do Windows, abra o arquivo `C:\AUTOEXEC.BAT` e acrescen
 Para Windows Vista:
 
 - Clique Iniciar e selecione `Painel de Controle`
-- Clique em Sistema, à direita você verá "Exibir informaç`oes básicas sobre seu computador"
+- Clique em Sistema, à direita você verá "Exibir informações básicas sobre seu computador"
 - À esquerda há uma lista de tarefas, a última é `Configuração avançada de sistema`. CLique nela.
 - A aba `Avançado` da caixa de diálogo `Propriedades do Sistema` é exibida. Clique no botão `Variáveis de Ambiente` exibido na parte inferior à direita.
 - Na caixa menor intitulada `Variáveis de Sistema` role até encontra Path e clique no botão `Alterar`.
