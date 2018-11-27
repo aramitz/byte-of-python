@@ -32,23 +32,23 @@ Hello World
 
 Perceba que o Python te dá a saída da linha imediatamente! O que você acabou de informar é um simples _comando_ Python. Usamos `print` para (sem surpresa aqui) imprimir qualquer valor que você fornecer para ela. Aqui, fornecemos o texto `Hello World` e isso é rapidamente impresso na tela.
 
-### How to Quit the Interpreter Prompt
+### Como Encerrar a Sessão do Interpretador
 
-If you are using a GNU/Linux or OS X shell, you can exit the interpreter prompt by pressing `[ctrl + d]` or entering `exit()` (note: remember to include the parentheses, `()`) followed by the `[enter]` key.
+Se você estiver usando um shell GNU/Linux ou OS X, você pode encerrar a sessão pressionando `[ctrl + d]` ou digitando `exit()` (nota: lembre-se de incluir os parênteses, `()`) seguindo da tecla `[enter]`.
 
-If you are using the Windows command prompt, press `[ctrl + z]` followed by the `[enter]` key.
+Caso você esteja usando o prompt de comandos do Windows, pressione `[ctrl + z]` seguido da tecla `[enter]`.
 
-## Choosing An Editor
+## Escolhendo um Editor
 
-We cannot type out our program at the interpreter prompt every time we want to run something, so we have to save them in files and can run our programs any number of times.
+Não podemos digitar todo o nosso programa no prompt do interpretador a cada vez que quisermos executar algo, logo temos de salvá-lo em arquivos e assim poderemos executar nossos programas qualquer número de vezes.
 
-To create our Python source files, we need an editor software where you can type and save. A good programmer's editor will make your life easier in writing the source files. Hence, the choice of an editor is crucial indeed. You have to choose an editor as you would choose a car you would buy. A good editor will help you write Python programs easily, making your journey more comfortable and helps you reach your destination (achieve your goal) in a much faster and safer way.
+Para criar nossos arquivos-fonte em Python, precisamos de um programa editor onde você consiga digitar e salvar o conteúdo. Um editor de programaçãofacilitará sua vida no momento de escrever os arquivos-fonte. COnsequentemente, a escolha de um editor é de suma importância. Você deve escolher um editor da mesma forma que você escolheria um carro antes de comprá-lo. Um bom editor lhe ajudará a escrever programas em Python facilmente, fazendo com que sua jornada seja mais confortável e auxiliando-lhe a alcançar seu destino (atingir sua meta) de modo muito mais rápido e seguro.
 
-One of the very basic requirements is _syntax highlighting_ where all the different parts of your Python program are colorized so that you can _see_ your program and visualize its running.
+Um dos requisitos mais básicos é o suporte ao _destaque de sintaxe_ onde as diferentes partes de seu programa Python são colorizadas de forma que você _vê_ seu programa e visualiza sua estrutura.
 
-If you have no idea where to start, I would recommend using [PyCharm Educational Edition](https://www.jetbrains.com/pycharm-edu/) software which is available on Windows, Mac OS X and GNU/Linux. Details in the next section.
+Se você não tem ideia onde começar, recomendo usar a [Edição Educacional do PyCharm](https://www.jetbrains.com/pycharm-edu/) disponível para Windows, Mac OS X e GNU/Linux. Detalhes na próxima seção.
 
-If you are using Windows, *do not use Notepad* - it is a bad choice because it does not do syntax highlighting and also importantly it does not support indentation of the text which is very important in our case as we will see later. Good editors will automatically do this.
+Se você utiliza o Windows, *não use o Notepad* - é uma péssima escolha porque ele não oferece suporte a indentação do texto o que é muito importante como veremos mais tarde. Bons editores fazem isso de forma automática.
 
 If you are an experienced programmer, then you must be already using [Vim](http://www.vim.org) or [Emacs](http://www.gnu.org/software/emacs/). Needless to say, these are two of the most powerful editors and you will benefit from using them to write your Python programs. I personally use both for most of my programs, and have even written an [entire book on Vim]({{ book.vimBookUrl }}).
 
